@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+/*-----common------------------------------*/
+body {
+/* @TODO	how to merge background-picture & background-colour? */
+    background:
+        url(../images/bg_body.jpg) repeat 0 0,
+        rgba( 255, 255, 255, 0.9);
+	/*background: url(/psd/bg-body.jpg) repeat 0 0;*/
+	width: 100%;
+	height: 100%;
+	display: block;
+	font: 11px Verdana, Arial, sans-serif;
+	line-height: normal;
+	color: #363636;
+	cursor: default;
+	margin: 0px auto;
+}
+
+strong {
+	font-weight: bolder;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.wrapper {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+.header, .footer {
+		color: #707070;
+}
+
+/*h1,*/
+/*h2 {*/
+/*	font-family: Georgia, Times New Roman, serif;*/
+/*	line-height: normal;*/
+/*	font-weight: normal;*/
+/*}*/
+
+h1 {
+	padding-bottom: 22px;
+}
+
+h1, h2 {
+	font-family: system, sans-serif;
+	color: #363636;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+p {
+	padding-bottom: 15px;
+}
+
+article {
+	margin-bottom: 0px;
+}
+
+article p {
+	margin-bottom: 0px;
+}
+
+a {
+	color: #363636;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #363636;
+	text-decoration: underline;
+}
+/*-----end common------------------------------*/
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 55px;
+	margin: 45px 0px 100px 100px;
+	position: relative;
+}
+
+.header .auth {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.auth a:hover {
+	text-decoration: none;
+}
+
+.auth .ph_code {
+	font: 18px System;
+}
+
+.auth .ph_nom {
+	font-weight: bolder;
+	font: 30px Arial;
+}
+
+/**/
+
+.container {
+	width: auto;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0px 0px 50px 350px;
+}
+
+.content .staff {
+	position: relative;
+	display: block;
+	margin: 25px 0px 40px 0px;
+}
+
+.staff div {
+	display: inline-block;
+	width: 280px;
+	height: auto;
+}
+
+.staff img {
+	float: left;
+	height: 77px;
+/*	we can use MAX & MIN-HEIGHT, but I think it's not good idea */
+	max-width: 150px;
+}
+
+.staff figure {
+	display: block;
+	height: 77px;
+	position: relative;
+	margin: 20px 20px 0px 0px;
+}
+
+.staff figcaption {
+	position: absolute;
+	margin-left: 152px;
+}
+
+/*
+.staff-list{
+	display: block;
+}
+
+.staff-list .staff-post{
+	display: inline-block;
+}
+*/
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	width: 350px;
+	margin-bottom: -100%;
+	margin-left: 100px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.left-sidebar a {
+	font-size: 40px;
+}
+	
+.left-sidebar a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #707070;	
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 1100px;
+	margin: 0px 100px 0px 100px;
+	position: relative;
+	display: inline-block;
+	border-top: 1px #adadad solid;
+	padding: 40px 0px 35px 0px;
+}
+
+.footer .signature {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer .vacancies {
+		position: absolute;
+		text-transform: lowercase;
+}

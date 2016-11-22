@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>WebForms</title>
+	<link  href="css/reset.css" rel="stylesheet">
+  <link  href="css/style.css" rel="stylesheet">
+	<link  href="css/boxes.css" rel="stylesheet">
+ </head>
+ <body>
+ 
+	<form class="forms">
+		
+		<hr>
+		
+		<div class="blocks">
+			<p>
+				<b>Please enter your name:</b>
+			</p>
+				
+			<label for="name" class="linelable">
+				Name:
+			</label>
+			<input id="name" name="name" type="text" autofocus required>
+			<span class="mark">*</span>
+		</div>
+
+		<hr>
+
+		<div class="blocks">
+			<p>
+				<label for="cours">
+					<b>Please enter your cours:</b>
+				</label>
+			</p>
+
+			<input type="text" name="cours" id="cours" list="courses">
+			<datalist id="courses">
+				<option value="WebDev">
+				<option value="QA">
+				<option value="C#">
+				<option value="Java">
+				<option value="JS">
+			</datalist>
+		</div>
+
+		<hr>
+
+		<div class="blocks">
+			<p>
+				<b>Please select your favorite activites:</b>
+			</p>
+
+			<label>
+				<input type="checkbox" name="eating">Eating
+			</label>
+			<label>
+				<input type="checkbox" name="sleeping">Sleeping
+			</label>
+			<label>
+				<input type="checkbox" name="coding">Coding
+			</label>
+			<label>
+				<input type="checkbox" name="drinking">Drinking
+			</label>
+			<label for="activ" class="linelable">
+				Other:
+			</label>
+			<input id="activ" name="activ" type="text" placeholder="May be Jogging?..">
+		</div>
+		
+		<hr>
+		
+		<div class="blocks">
+			<label for="car">
+				<p>
+					<b>Please enter your car registration number:</b>
+				</p>
+			</label>
+			<input id="car" placeholder="BH0001BH" pattern="[A-Z]{2}+[1-9]{4}+[A-Z]{2}">
+		</div>
+		
+		<hr>
+		
+		<div class="blocks">
+			<label for="age">
+				<p>
+					<b>How old are you?</b>
+				</p>
+			</label>
+			<label for="age" class="linelable">
+				I'm
+			</label>
+			<input id="age" placeholder="18-95" inrange>
+			<span>years old.</span>
+		</div>
+		
+		<hr>
+			
+	</form>
+
+<!--col2-->
+
+	<form class="forms">
+		
+		<hr>
+	
+		<div class="blocks">
+			<ul>                
+				<li>
+					<input id="cfirst" type="checkbox" name="first" checked hidden />
+					<label for="cfirst">Checked checkbox</label>
+				</li>
+				<li>
+					<input id="csecond" type="checkbox" name="second" hidden />
+					<label for="csecond">Unchecked checkbox</label>
+				</li>
+				<li>
+					<input id="cthird" type="checkbox" name="third" hidden disabled />
+					<label for="cthird">Disabled checkbox</label>
+				</li>
+				<li>
+					<input id="clast" type="checkbox" name="last" checked hidden disabled />
+					<label for="clast">Disabled checked checkbox</label>
+				</li>
+			</ul>
+			<ul>                
+				<li>
+					<input id="rfirst" type="radio" name="radio" checked hidden />
+					<label for="rfirst">Checked radio</label>
+				</li>
+				<li>
+					<input id="rsecond" type="radio" name="radio" hidden />
+					<label for="rsecond">Unchecked radio</label>
+				</li>
+				<li>
+					<input id="rthird" type="radio" name="radio" hidden disabled />
+					<label for="rthird">Disabled radio</label>
+				</li>
+			</ul>
+			
+		</div>
+
+		<hr>
+
+		<div class="blocks">
+
+		</div>
+
+		<hr>
+		
+	</form>
+  
+ </body>
+</html>

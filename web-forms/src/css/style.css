@@ -1,0 +1,58 @@
+form {
+	width: 320px;
+	display: inline-block;
+	margin: 20px;
+}
+
+hr {
+  background: none;
+  border: none;
+  width: auto;
+  height: 0;
+  border-top: 2px dotted lightgray;
+  border-left: 90px solid transparent;  
+  border-right: 90px solid transparent;
+}
+
+
+.forms div.blocks {
+	display: block;
+}
+
+.forms label {
+	display: block;
+}
+
+.forms label.linelable {
+	display: inline-block;
+}
+
+.forms span.mark {
+	color: red;
+	font-weight: bold;
+}
+
+.forms input:required:invalid {
+        border:1px solid red;
+}
+
+.columns {
+	display: inline-block;
+	margin-right: 100px;
+}
+
+.content .contactline {
+	margin: 10px 0 20px 0;
+}
+
+.content .formfields {
+	margin: 0 0 20px 0;	
+}
+
+.content .formfields input {
+	width: 230px;
+}
+
+.content .questionfields input {
+	height: 80px;
+}
